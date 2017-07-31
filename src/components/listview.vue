@@ -153,31 +153,34 @@ export default {
 		    overflow: hidden;
 	    	.ul1{
 		    	width:100%;
+		    	margin:0 auto;
 		    	padding-bottom: 0.2rem;
 		    	display: flex;
-		    	justify-content: space-between;
+		    	justify-content: space-around;
 		    	li{
 			    	width:20%;
 			    	line-height:1.5rem;
 			    	position: relative;
 			    	text-align: center;
-			    	font-size:.4rem;
+			    	font-size:.6rem;
 			    	font-weight: 600;
 			    	box-sizing: border-box;
 			    	a{
 				    	color:#333;
 				    }
 				    .redd{
-				    	color:#dd1712;
-					    &:after{
+				    	a{
+					    	color:#dd1712;
+				    	}
+					    &::after{
 					    	content: "";
-					    	width:1.6rem;
-					    	height:0.2rem;
+					    	width:.8rem;
+					    	height:0.1rem;
 					    	display: block;
 					        position: absolute;
 					    	background: #dd1712;
 					    	left:34%;
-					    	bottom:0.4rem;
+					    	bottom:0.2rem;
 					    }
 					}
 			    }

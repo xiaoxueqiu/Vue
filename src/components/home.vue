@@ -76,14 +76,14 @@ export default {
         this.getData()      
     },
     methods:{
-        getData(item,index){
+        getData(){
            let _this = this;
             axios.get('../../static/json/shopfl.json')
             .then(function (res) {
             let list = res.data.lists;
             console.log(list);
             _this.list = list;
-            _this.$root.shopArr.push(item);
+            //_this.$root.shopArr.push(item);
           }).then(function(err){
             console.log(err)
           })
