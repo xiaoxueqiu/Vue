@@ -1,0 +1,450 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "data": [
+        {
+            "show_type": "single1",
+            "data": {
+                "img": "http://shihuo.hupucdn.com/newsIndex11/201707/2809/23bd98bd42eccfd412e87ed795f3b082.jpg?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "column_name": "今日神价格",
+                "title": "【下单有礼VOL.2】你下单 我送礼 单日消费满800元赠大牌惊喜",
+                "subtitle": "活动时间：7.29-7.31 评论有奖",
+                "merchant": "海淘大师",
+                "href": "//m.shihuo.cn/youhui/285503.html",
+                "param_str": "1501228847:2:",
+                "zhiding": true,
+                "item_id": "",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAxOS9iODUzOWNiMWZhNmYyZDc2OWEwNWY5ZDM4YjQ0NzUyMy5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Nike KD 9",
+                "intro": "“工程网眼设计，让你在鏖战时享受轻盈贴合及非凡透气的穿着感受。”",
+                "merchant": "淘宝",
+                "price": "848",
+                "href": "//www.shihuo.cn/sports/detail/7709.html?supplierId=174179&newsId=121967&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAxOS9iODUzOWNiMWZhNmYyZDc2OWEwNWY5ZDM4YjQ0NzUyMy5qcGc&sourceType=1",
+                "param_str": "1501478104:2:",
+                "zhiding": false,
+                "item_id": "82843",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUyMy9lMmIzNGQ0ODQ3MmZjZWI1N2U5MTY5MTE3MDAwMGI0Ni5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Asics Gel-Lyte Ⅲ",
+                "intro": "“Asics Gel-Lyte Ⅲ，打造不一样的时尚感。”",
+                "merchant": "淘宝",
+                "price": "499",
+                "href": "//www.shihuo.cn/sports/detail/366.html?supplierId=96708&newsId=120337&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUyMy9lMmIzNGQ0ODQ3MmZjZWI1N2U5MTY5MTE3MDAwMGI0Ni5qcGc&sourceType=2",
+                "param_str": "1501477209:2:",
+                "zhiding": false,
+                "item_id": "82841",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcyMS9mZjFjOTgyMzJhYTU5ODE5NjQ4ZDY2MTE5MzM4YmYzYS5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Nike Kyrie 3",
+                "intro": "鞋面整体以黑色覆盖，辅以银色 Nike Swoosh logo 突出点缀",
+                "merchant": "淘宝",
+                "price": "448",
+                "href": "//www.shihuo.cn/sports/detail/12191.html?supplierId=65965&newsId=121130&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcyMS9mZjFjOTgyMzJhYTU5ODE5NjQ4ZDY2MTE5MzM4YmYzYS5qcGc&sourceType=1",
+                "param_str": "1501476306:2:",
+                "zhiding": false,
+                "item_id": "82838",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxNS9iZDBiMDlkYzFmZGY5YzEwMWYxOTRiOWQ5MTgzMjZiNi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Air Jordan 7",
+                "intro": "白蓝撞色拼接，加上细节的金色和泼墨装饰。",
+                "merchant": "淘宝",
+                "price": "1049",
+                "href": "//www.shihuo.cn/sports/detail/19.html?supplierId=77723&newsId=120906&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxNS9iZDBiMDlkYzFmZGY5YzEwMWYxOTRiOWQ5MTgzMjZiNi5qcGc&sourceType=3",
+                "param_str": "1501475408:2:",
+                "zhiding": false,
+                "item_id": "82834",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/bdf58194168bacab1b7d8e53cc3f12ad1501467782.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/1ba4851c9b80b312a230ba8ca14585591501467791.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/eaab5721c255419ebe036d3f37304a771501467797.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/bdf58194168bacab1b7d8e53cc3f12ad1501467782.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/1ba4851c9b80b312a230ba8ca14585591501467791.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/eaab5721c255419ebe036d3f37304a771501467797.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "品质生活",
+                "title": "不懂就问，卖牙膏还卖祛痘膏的狮王Lion是个怎么样的牌子？",
+                "author_id": "29487326",
+                "author_name": "Blackduckz",
+                "avatar": "http://i3.hoopchina.com.cn/user/326/29487326/29487326_big_3.png",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=29487326",
+                "href": "//m.shihuo.cn/article/detail/4237.html",
+                "param_str": "1501474908:2:",
+                "zhiding": false,
+                "item_id": "82774",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/9bfacb0ca4c04bc82c2ee26d48d64f051501474488.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/2cdc4542111e4ab070191b84442142d81501474489.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/922267799d59429b704c517104f78efb1501474489.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/9bfacb0ca4c04bc82c2ee26d48d64f051501474488.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/2cdc4542111e4ab070191b84442142d81501474489.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/922267799d59429b704c517104f78efb1501474489.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "欲望清单",
+                "title": "一周国潮单品放送Vol.10 | NPC主理人李晨同款单品紧要200+？",
+                "author_id": "16129506",
+                "author_name": "四月唯夏",
+                "avatar": "http://i1.hoopchina.com.cn/user/506/16129506/16129506_big_1.jpg",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=16129506",
+                "href": "//m.shihuo.cn/article/detail/4222.html",
+                "param_str": "1501474325:2:",
+                "zhiding": false,
+                "item_id": "82828",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAyMi9hNWU2NmRjNGMzMTQwOTFiNjcxNDkyZjZjMTA5NjA2YS5wbmc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Leica/徕卡 SOFORT拍立得",
+                "intro": "小巧简约设计，款式新颖，回头率超高，可方便随身携带。",
+                "merchant": "中亚",
+                "price": "1870",
+                "href": "//www.shihuo.cn/sports/detail/31049.html?supplierId=228737&newsId=122142&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAyMi9hNWU2NmRjNGMzMTQwOTFiNjcxNDkyZjZjMTA5NjA2YS5wbmc&sourceType=7",
+                "param_str": "1501474210:2:",
+                "zhiding": false,
+                "item_id": "82827",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d899ba7e0a2d52d8e621be4030603c5b1501475571.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d3429ac3db8f813b09c62370063fcd9f1501475571.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/77b38a81452d2c701827815f1e82ea1c1501475572.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d899ba7e0a2d52d8e621be4030603c5b1501475571.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d3429ac3db8f813b09c62370063fcd9f1501475571.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/77b38a81452d2c701827815f1e82ea1c1501475572.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "潮流穿搭",
+                "title": "匡威1970s、one star看花了眼？别忘记了还有元祖款之一「开口笑」",
+                "author_id": "31265340",
+                "author_name": "中国第二研究院院长",
+                "avatar": "https://i1.hoopchina.com.cn/user/340/31265340/31265340-1495071265.jpeg@45h_45w_2e",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=31265340",
+                "href": "//m.shihuo.cn/article/detail/4258.html",
+                "param_str": "1501474143:2:",
+                "zhiding": false,
+                "item_id": "82836",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUyMy8xMGRjODNlZjQ3MmEzOTI1MWFhMDQxYmViZDMzOTE2Zi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "New balance 999",
+                "intro": "New Balance 999，塑造卓越的减震效果，整体鞋款彰显浓郁的复古味道。",
+                "merchant": "淘宝",
+                "price": "549",
+                "href": "//www.shihuo.cn/sports/detail/354.html?supplierId=101998&newsId=120335&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUyMy8xMGRjODNlZjQ3MmEzOTI1MWFhMDQxYmViZDMzOTE2Zi5qcGc&sourceType=2",
+                "param_str": "1501473610:2:",
+                "zhiding": false,
+                "item_id": "82822",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjYxMi9mNzYwYzM0NDVjY2U3MzY1ZjNmYmUwYzcyOGNkYjk3Zi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Air Jordan 31",
+                "intro": "在白红氛围之下的黑色托衬，营造了熟悉的芝加哥公牛队氛围。",
+                "merchant": "淘宝",
+                "price": "1298",
+                "href": "//www.shihuo.cn/sports/detail/8340.html?supplierId=60768&newsId=120510&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjYxMi9mNzYwYzM0NDVjY2U3MzY1ZjNmYmUwYzcyOGNkYjk3Zi5qcGc&sourceType=1",
+                "param_str": "1501472705:2:",
+                "zhiding": false,
+                "item_id": "82816",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/c1e56a5faa92ddbd277a1d57292f3aa61501474767.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/79b40c9b88514bb1f085cba03dd9d4851501474817.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/3f794743983ae62d3085b58fa4be47bc1501474817.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/c1e56a5faa92ddbd277a1d57292f3aa61501474767.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/79b40c9b88514bb1f085cba03dd9d4851501474817.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/3f794743983ae62d3085b58fa4be47bc1501474817.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "潮流穿搭",
+                "title": "美式街头品牌科普：PLEASURES —— 安息吧，朋克音乐",
+                "author_id": "4308024",
+                "author_name": "二十叁",
+                "avatar": "http://i1.hoopchina.com.cn/user/024/4308024/4308024_big_17.jpg",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=4308024",
+                "href": "//m.shihuo.cn/article/detail/4252.html",
+                "param_str": "1501471824:2:",
+                "zhiding": false,
+                "item_id": "82832",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxNi9lNjJlZDE0Nzk1MWQxMDhlNzFkM2I0OWI5ZThjZTJjYi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Air Jordan 3",
+                "intro": "采用了亮眼的粉末蓝色鞋面。",
+                "merchant": "淘宝",
+                "price": "499",
+                "href": "//www.shihuo.cn/sports/detail/15.html?supplierId=32243&newsId=120981&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxNi9lNjJlZDE0Nzk1MWQxMDhlNzFkM2I0OWI5ZThjZTJjYi5qcGc&sourceType=3",
+                "param_str": "1501471808:2:",
+                "zhiding": false,
+                "item_id": "82808",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxOS9mNjgzZmI5ZWY1YzU0ZTc0ODI1NWJjNjU0YzlmOGMzMi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "Air Jordan 7",
+                "intro": "以紫红主体辅以黑色搭配，细节则注入狼灰点缀。",
+                "merchant": "淘宝",
+                "price": "949",
+                "href": "//www.shihuo.cn/sports/detail/19.html?supplierId=89306&newsId=121043&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcxOS9mNjgzZmI5ZWY1YzU0ZTc0ODI1NWJjNjU0YzlmOGMzMi5qcGc&sourceType=1",
+                "param_str": "1501470905:2:",
+                "zhiding": false,
+                "item_id": "82800",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/f84a37c2daf605b0632b7fd2bc1271901501470274.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/96731f50bd15dc8ec613f0982c3ac0531501470274.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/41ea7662d336f4e678247112a49d4a491501470274.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/f84a37c2daf605b0632b7fd2bc1271901501470274.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/96731f50bd15dc8ec613f0982c3ac0531501470274.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/41ea7662d336f4e678247112a49d4a491501470274.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "优质晒物",
+                "title": "Air Jordan 13 神之凝视",
+                "author_id": "21213266",
+                "author_name": "tujinjin311",
+                "avatar": "https://shihuo.hupucdn.com/app/20170725/150097091810827",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=21213266",
+                "href": "//m.shihuo.cn/shaiwu/detail/53447",
+                "param_str": "1501470413:2:",
+                "zhiding": false,
+                "item_id": "82797",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcyMi84OTRhYTcwMjJlZjg5YTdhNjQ4NGVjNDdiNTg0OWYwYS5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "New Balance 580",
+                "intro": "New Balance 580，给脚后跟提供了最大的支撑稳定性和减震效果。",
+                "merchant": "淘宝",
+                "price": "629",
+                "href": "//www.shihuo.cn/sports/detail/342.html?supplierId=221896&newsId=121208&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjcyMi84OTRhYTcwMjJlZjg5YTdhNjQ4NGVjNDdiNTg0OWYwYS5qcGc&sourceType=2",
+                "param_str": "1501470009:2:",
+                "zhiding": false,
+                "item_id": "82794",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "multi2",
+            "data": {
+                "img_attr": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d5bfa1392b94109edbef72526710aa351501467896.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/3658bf842e2e37d097ac58d5b3db08101501467896.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/e57de9776343647b35452aba1bd9c0881501467896.jpg?imageView2/0/w/600/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "img_full_screen": [
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/d5bfa1392b94109edbef72526710aa351501467896.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/3658bf842e2e37d097ac58d5b3db08101501467896.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg",
+                    "http://shihuo.hupucdn.com/comment.admin.cover/20170731/e57de9776343647b35452aba1bd9c0881501467896.jpg?imageView2/0/w/800/h/800/interlace/1%7cimageMogr2/format/jpg"
+                ],
+                "column_name": "装备党",
+                "title": "八月好鞋推荐｜假期过半，你的暑期剁手计划开始了吗？",
+                "author_id": "20037858",
+                "author_name": "弎号信仰",
+                "avatar": "http://shihuo.hupucdn.com/app/20170707/f42c931f-d75f-48aa-9938-c7595aa80a22.jpg",
+                "personal_href": "//m.shihuo.cn/user/homepage?uid=20037858",
+                "href": "//m.shihuo.cn/article/detail/4232.html",
+                "param_str": "1501468250:2:",
+                "zhiding": false,
+                "item_id": "82779",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAyMi8yYzE3ODJjZDhhNzc2ODZjZWUwYWRlZDZiZTdiNDZlMy5wbmc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "昂达GTX1050典范 2G D5 游戏独立显卡",
+                "intro": "采用横向鳍片+纵向热管排列，大部分热量直接散发机箱外。",
+                "merchant": "天猫",
+                "price": "709",
+                "href": "//www.shihuo.cn/sports/detail/35154.html?supplierId=228656&newsId=122097&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMzAyMi8yYzE3ODJjZDhhNzc2ODZjZWUwYWRlZDZiZTdiNDZlMy5wbmc&sourceType=7",
+                "param_str": "1501468210:2:",
+                "zhiding": false,
+                "item_id": "82785",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUxOS83NmU5YTY4ZWI5MGJlNGJmZWE4MTBkZDhhM2ZkNjExZC5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "adidas Originals Superstar",
+                "intro": "经典鞋型以纯白鞋身制作，银色细节更添女性魅力",
+                "merchant": "淘宝",
+                "price": "649",
+                "href": "//www.shihuo.cn/sports/detail/358.html?supplierId=223448&newsId=120169&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjUxOS83NmU5YTY4ZWI5MGJlNGJmZWE4MTBkZDhhM2ZkNjExZC5qcGc&sourceType=3",
+                "param_str": "1501468208:2:",
+                "zhiding": false,
+                "item_id": "82784",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjgyMS83NzYwZDkwOWVjZDY1ZGRjODQ3OTZhZTFkMjVlOWIyZS5wbmc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "舒尔 SE112 入耳式耳机",
+                "intro": "灵活的人体工学设计，轻巧低调的外形，可确保佩戴舒适。",
+                "merchant": "京东",
+                "price": "380",
+                "href": "//www.shihuo.cn/sports/detail/34019.html?supplierId=192124&newsId=121480&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjgyMS83NzYwZDkwOWVjZDY1ZGRjODQ3OTZhZTFkMjVlOWIyZS5wbmc&sourceType=7",
+                "param_str": "1501467906:2:",
+                "zhiding": false,
+                "item_id": "82780",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        },
+        {
+            "show_type": "single3",
+            "data": {
+                "img": "http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjgyMS9hODcwZDc3ZDdmNzBhYTgwYjM1NmU4NDk2YTE2OTNiZC5wbmc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+                "tag_name": "",
+                "title": "罗技G502有线电竞鼠标",
+                "intro": "防油涂层，防滑点设计，手感把握更佳。触感反馈灵敏，新一代芯片带来更快响应。",
+                "merchant": "天猫",
+                "price": "449",
+                "href": "//www.shihuo.cn/sports/detail/28949.html?supplierId=227488&newsId=121493&img=http%3A%2F%2Fshihuoproxy.hupucdn.com%2FaHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDcvMjgyMS9hODcwZDc3ZDdmNzBhYTgwYjM1NmU4NDk2YTE2OTNiZC5wbmc&sourceType=7",
+                "param_str": "1501467896:2:",
+                "zhiding": false,
+                "item_id": "82778",
+                "expose_key": "",
+                "qk": "news_general"
+            }
+        }
+    ],
+    "missed": [],
+    "youhui": [
+        {
+            "title": "松下ER-GN30-K鼻毛修剪器 88元包邮",
+            "img": "http://shihuo.hupucdn.com/newsIndex11/201707/3106/d99f841598795b3a7dd347edd83e8a77.jpg?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+            "href": "//m.shihuo.cn/youhui?id=286230",
+            "expose_key": "",
+            "qk": "recommend_youhui"
+        },
+        {
+            "title": "ELLE单肩牛皮包 299元包邮",
+            "img": "http://shihuo.hupucdn.com/newsIndex11/201707/3113/2a90df2fbea9b0d6f243aa68bc514f59.jpg?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+            "href": "//m.shihuo.cn/youhui?id=286321",
+            "expose_key": "",
+            "qk": "recommend_youhui"
+        },
+        {
+            "title": "美宁红烧猪肉500g*3罐头51元包邮",
+            "img": "http://shihuo.hupucdn.com/news/crawler/d13cd8c9152945.jpg?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg",
+            "href": "//m.shihuo.cn/youhui?id=280685",
+            "expose_key": "",
+            "qk": "recommend_youhui"
+        }
+    ],
+    "ad": {
+        "qk": "recommend_ad"
+    },
+    "list_ad": []
+}
