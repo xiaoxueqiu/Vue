@@ -1,17 +1,12 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <feet></feet>
   </div>
 </template>
 
 <script>
-import feet from '@/components/feet'
 export default {
-  name: 'app',
-  components:{
-    feet,
-  }
+  name: 'app'
 }
 </script>
 

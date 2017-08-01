@@ -127,12 +127,12 @@ export default {
                _this.list = list;
             })
         },
-        /*// 跳转页面
+        // 跳转页面
         jump(obj) {
         	let _this = this;
             _this.$root.shuju = obj;
             _this.$router.push('../detail');
-        }*/
+        }
     }
 }
 </script>

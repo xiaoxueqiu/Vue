@@ -1,12 +1,14 @@
 <template>
-    <div class="topnav">
+    <div class="topnav" ref="head">
         <form id="searchBox" method="get" class="searchBox" style="background: rgba(221, 23, 18, 0);">
             <div class="search_box">
                 <div class="search">
                     <input type="text" class="input focus" name="keywords" value="" placeholder="搜索商品，品牌" id="searchVal">
                     <input type="reset" class="sh_searchClear" title="重置搜索词" style="display: none;">
                 </div>
-                <a class="me"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/me_670cb9f.png" alt=""></a>
+                <router-link to="/more">
+                    <a class="me"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/me_670cb9f.png" alt=""></a>
+                </router-link>
                 <a href="javascript:void(0);" class="cancel">取消</a>
             </div>
         </form>
@@ -24,7 +26,7 @@ export default {
 .topnav{
     width: 100%;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
     border: 0;

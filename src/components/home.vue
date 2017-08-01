@@ -69,8 +69,12 @@ export default {
                     imgUrl:"http://shihuo.hupucdn.com/appHome/201707/3020/744cb42343c11a234c769c5350bc55a5.jpg?imageView2/2/w/120/h/120/interlace/1",
                     url:"//m.shihuo.cn/haitao#qk=haitao"
                 }
-            ],   
+            ], 
+            scroll:''  
         }
+    },
+    watch:{
+        '$route':'getData'
     },
     created () {
         this.getData()      

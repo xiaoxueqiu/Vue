@@ -1,7 +1,7 @@
 <template>
     <div class="topnav2">
         <header>
-        	<p class="head_p1"><router-link to="/index/home"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_50e46d0.png"></router-link></p>
+        	<p class="head_p1"><router-link to="/home"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_50e46d0.png"></router-link></p>
         	<form>
         		<input type="image" name="" src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/search_0b8e800.png">
         		<input type="text" name="" placeholder="搜索最好的运动装备">
@@ -9,13 +9,13 @@
         	<p @click="bol()"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_9992b6c.png"></p>
         	<ul v-show="bool1">
         		<li>
-        		    <router-link to="/index/home">
+        		    <router-link to="/home">
         		        <p><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/homepage-icon_cc50250.png"></p>
         		        <span>首页</span>
         		    </router-link>
         		</li>
         		<li>
-        		    <router-link to="/index/more">
+        		    <router-link to="/more">
         		        <p><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/user-center-icon_46c20aa.png"></p>
         		        <span>我的</span>
         		    </router-link>
