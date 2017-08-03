@@ -79,6 +79,7 @@ export default {
     name: 'find',
     data () {
         return{
+            scroll:'' ,
             counter:0,
             // 轮播图路径
             banner3Url:['http://shihuo.hupucdn.com/appHome/201707/0715/20e477f7221c0c8fe1d86e640447b4ca.jpg?imageView2/2/w/750/h/268/interlace/1','http://shihuo.hupucdn.com/appHome/201707/2810/f85a86e48b3b4102e997724a9799f7ff.jpg?imageView2/2/w/750/h/268/interlace/1','http://shihuo.hupucdn.com/appHome/201707/2823/9191a4433d751fac8f9a555a8a348106.jpg?imageView2/2/w/750/h/268/interlace/1','http://shihuo.hupucdn.com/appHome/201707/2214/44683ee9c5db21cc4867f21b2d10beb4.jpg?imageView2/2/w/750/h/268/interlace/1','http://shihuo.hupucdn.com/appHome/201707/1513/8cee428ce9990508b3fc2783886e1987.jpg?imageView2/2/w/750/h/268/interlace/1'],
@@ -142,13 +143,99 @@ export default {
                let list3 = response.data.data;
                this.list3 = list3;
             })
-        }
-    }
+        },
+
+       /* menu() {
+            let _this = this;
+            _this.scroll = document.body.scrollTop+document.documentElement.scrollTop;
+            console.log(_this.scroll)
+            if(_this.scroll ==0){
+               this.flag = 'fixed';
+            }else{
+                this.falg ="";
+            }
+        }*/
+    },
+    //监听滚轮
+    /*mounted() {
+        window.addEventListener('scroll', this.menu)
+    }*/
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+/*tab切换栏*/
+    .fixed{
+        position: fixed;
+        top:0;
+        ul{
+            font-size:.65rem;
+            color:#444;
+            white-space: nowrap;
+            overflow: auto;
+            padding-bottom:.5rem;
+            &::-webkit-scrollbar {/*隐藏滚轮*/
+                display: none;
+            }
+            li{     
+                display: inline-block;
+                line-height: 1.6rem;
+                padding:0 2.5%;
+                position: relative;
+                border-bottom:1px solid #e3e3e3;
+            }
+            .redli{
+                color:#dd1712;
+                pointer-events: auto;
+                &::after{
+                    display: block;
+                    width:1.3rem;
+                    height:3px;
+                    content: '';
+                    background:#dd1712;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }  
+            }
+        }
+    }
+    .tabs{
+        position: relative;
+        width:100%;
+        ul{
+            font-size:.65rem;
+            color:#444;
+            white-space: nowrap;
+            overflow: auto;
+            padding-bottom:.5rem;
+            &::-webkit-scrollbar {/*隐藏滚轮*/
+                display: none;
+            }
+            li{     
+                display: inline-block;
+                line-height: 1.6rem;
+                padding:0 2.5%;
+                position: relative;
+                border-bottom:1px solid #e3e3e3;
+            }
+            .redli{
+                color:#dd1712;
+                pointer-events: auto;
+                &::after{
+                    display: block;
+                    width:1.3rem;
+                    height:3px;
+                    content: '';
+                    background:#dd1712;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }  
+            }
+        }
+    }
 .find{
     margin-bottom: 70px;
     width: 100%;
@@ -227,41 +314,7 @@ export default {
             }
         }
     }
-    /*tab切换栏*/
-    .tabs{
-        width:100%;
-        ul{
-            font-size:.65rem;
-            color:#444;
-            white-space: nowrap;
-            overflow: auto;
-            padding-bottom:.5rem;
-            &::-webkit-scrollbar {/*隐藏滚轮*/
-                display: none;
-            }
-            li{     
-                display: inline-block;
-                line-height: 1.6rem;
-                padding:0 2.5%;
-                position: relative;
-                border-bottom:1px solid #e3e3e3;
-            }
-            .redli{
-                color:#dd1712;
-                pointer-events: auto;
-                &::after{
-                    display: block;
-                    width:1.3rem;
-                    height:3px;
-                    content: '';
-                    background:#dd1712;
-                    position: absolute;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }  
-            }
-        }
-    }
+    
     /*渲染区*/
     .xrq{
         width:100%;

@@ -5,7 +5,6 @@
             <div class="toux"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/head_02977e3.png"></div>
             <div class="dz">
             <router-link to="/login"> 登录</router-link>
-            <router-link to="/register"> 注册</router-link>
                 <p>金币 0</p>
             </div>
         </div>

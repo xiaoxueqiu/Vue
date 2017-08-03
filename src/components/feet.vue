@@ -22,7 +22,7 @@ export default {
       list1:[
         {
           title:'首页',
-          to:'/home',
+          to:'/index/home',
           cla:'homecol',
           activeCla:'home_col',
           /*src:'http://sh1.hoopchina.com.cn/images/trademobile/common/index-on.png?2016111114',          
@@ -30,7 +30,7 @@ export default {
         },
         {
           title:'优惠',
-          to:'/discount',
+          to:'/index/discount',
           cla:'discountcol',
           activeCla:'discount_col',
           /*src:'http://sh1.hoopchina.com.cn/images/trademobile/common/youhui.png?2016111114',          
@@ -39,7 +39,7 @@ export default {
         },
         {
           title:'发现',
-          to:'/find',
+          to:'/index/find',
           cla:'findcol',
           activeCla:'find_col',
           /*src:'http://sh1.hoopchina.com.cn/images/trademobile/common/find.png?2016111114',          
@@ -47,7 +47,7 @@ export default {
         },
         {
           title:'装备',
-          to:'/equipment',
+          to:'/index/equipment',
           cla:'equipmentcol',
           activeCla:'equipment_col',
           /*src:'http://sh1.hoopchina.com.cn/images/trademobile/common/zhuangbei.png?2016111114',          
@@ -55,7 +55,7 @@ export default {
         },
         {
           title:'更多',
-          to:'/more',
+          to:'/index/more',
           cla:'morecol',
           activeCla:'more_col',
          /* src:'http://sh1.hoopchina.com.cn/images/trademobile/common/more.png?2016111114',          
@@ -90,6 +90,7 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 20;
   font-size:.6rem;
   line-height: 2.45rem;
   background: #fff;

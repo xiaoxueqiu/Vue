@@ -2,12 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Feet from '../components/feet'
 import Home from '@/components/home'
+import Listview from '../components/listview'
 import Discount from '@/components/discount'
 import Find from '@/components/find'
 import Equipment from '@/components/equipment'
 import More from '@/components/more'
 import Login from '@/components/login'
-import Register from '@/components/register'
 import Detail from '../components/detail'
 import Shopcar from '../components/shopcar'
 
@@ -16,7 +16,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
   {
-      path: '/',
+      path: '/index',
       name: 'feet',
       component: Feet,
       children:[
@@ -53,6 +53,11 @@ export default new Router({
       component:Detail
     },
     {
+      path:'/listview',
+      name:'listview',
+      component:Listview
+    },
+    {
       path:'/shopcar',
       name:'shopcar',
       component:Shopcar
@@ -63,13 +68,8 @@ export default new Router({
       component: Login
     },
     {
-      path: '/register',
-      name: 'register',
-      component: Register
-    },
-    {
       path:"*",
-      redirect:"/home"
+      redirect:"/index/home"
     }
   ]
 })

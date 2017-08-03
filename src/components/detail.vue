@@ -6,13 +6,13 @@
         	<p @click="bol()"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_9992b6c.png"></p>
         	<ul v-show="bool">
         		<li>
-        		    <router-link to="/home">
+        		    <router-link to="index/home">
         		        <p><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/homepage-icon_cc50250.png"></p>
         		        <span>首页</span>
         		    </router-link>
         		</li>
         		<li>
-        		    <router-link to="/more">
+        		    <router-link to="/index/more">
         		        <p><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/user-center-icon_46c20aa.png"></p>
         		        <span>我的</span>
         		    </router-link>
@@ -109,6 +109,7 @@ export default {
     	},
         tj(obj){
             for( var i =0; i < this.$root.shopArr.length;i++) {
+                console.log(this.$root.shopArr[0].title)
                 if(obj.title == this.$root.shopArr[i].title) {
                      this.$root.shopArr[i].count+=this.count;
                      alert("已添加到购物车，请注意查看");
@@ -124,171 +125,175 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
     .detail{
     	width:100%;
-    }
-    /*头部区域*/
-    header{
-    	width:100%;
-    	height:4.8rem;
-    	background: #f7f7f7;
-    	border-bottom: 1px solid #e5e5e5;
-    	display: flex;
-    	justify-content: space-around;
-    	align-items: center;
-    	position: relative;
-    	position:fixed;
-    	z-index:10;
-    	left:0;
-    	top:0;
-    }
-    header p{
-    	width:4rem;
-    	height:4rem;
-    }
-    header p img{
-    	width:100%;
-    }
-    header h2{
-    	width:50%;
-    	line-height:4.8rem;
-    	text-align:center;
-    	font-size:1.9rem;
-    	color:#333;
-    	white-space: nowrap;
-    	overflow: hidden;
-    	text-overflow: ellipsis;
-    }
-    header ul{
-    	width:36%;
-    	background: rgba(0,0,0,0.7);
-        position: absolute;
-        top:4.4rem;
-        right:1rem;
-        z-index:9;
-        border-radius: 4px;
-    }
-    header ul li{
-    	width:100%;
-        height:3.6rem;
-        border-top:1px solid grey;
-    }
-    header ul li a{
-    	display: block;
-    	width:100%;
-    	height:100%;
-    	display:flex;
-    	justify-content: center;
-    	align-items: center;
-    }
-    header ul li p{
-    	width:1.8rem;
-    	height:1.8rem;
-    	margin-right: 1rem;
-    }
-    header ul li p img{
-    	width:100%;
-    }
-    header ul li span{
-    	width:2.4rem;
-    	color:white;
-    	font-size:1.2rem;
-    }
-
-    /*图片展示区*/
-    .bigtu{
-    	width:100%;
-    	margin-top: 4.9rem;
-    	overflow: hidden;
-    }
-    ,.bigtu .img_much{
-        width:100%;
-    }
-    .bigtu .img_uniq img,.bigtu .img_much img{
-    	width:100%;
-    }
-    
-    /*商品信息区域*/
-    .xinxi{
-    	width:100%;
-        overflow: hidden;
-        padding:1rem 3%;
-        box-sizing: border-box;
-        font-size:1.2rem;
-    }
-    .xinxi h3{
-    	width:100%;
-    	line-height: 3.2rem;
-    	font-size: 1.8rem;
-    	color:#dd1712;
-    	text-align:center;
-    }
-    .xinxi p{
-    	padding-bottom: 0.6rem;
-    	border-bottom:1px dashed #f3f3f3;
-    }
-    .xinxi .sp1{
-    	display: block;
-    	font-weight:bold;
-    	font-size:1.5rem;
-    	color:purple;
-    }
-    .xinxi .sp2{
-    	display: block;
-    	font-size:1.4rem;
-    	color:#444;
-    	text-indent: 2em;
-    }
-    .xinxi .p1 .sp2{
-    	color:darkcyan;
-    	font-size:1.5rem;
-    	font-size:bold;
-    }
-
-    /*购买商品*/
-    .buy{
-    	width:100%;
-        padding:0 3%;
-        box-sizing: border-box;
-        font-size:1.2rem;
-    }
-    .buy .jia{
-        font-size:1.4rem;
-        color:blue;
-        line-height: 2.8rem;
-        margin-bottom: 0.5rem;
-    }
-    .buy .jia span{
-    	font-size:1.6rem;
-        color:#dd1712;
-        font-weight:bold;
-    }
-    .buy div{
-    	width:100%;
-    	height:2rem;
-    	display: flex;
-    	justify-content: space-between;
-    	margin-bottom: 0.5rem;
-    }
-    .buy div button{
-    	width:10%;
-    }
-    .buy div input{
-    	width: 80%;
-    	text-indent: 1rem;
-    }
-    .buy .zjia{
-    	width:100%;
-        overflow: hidden;
-    	padding:1.4rem 0;
-    }
-    .buy .zjia span{
-    	font-size:1.6rem;
-    	color:#dd1712;
-    }
-    .buy .zjia button{
-    	width:40%;
-    	float:right;
+        /*头部区域*/
+        header{
+        	width:100%;
+        	height:2.4rem;
+        	background: #f7f7f7;
+        	border-bottom: 1px solid #e5e5e5;
+        	display: flex;
+        	justify-content: space-around;
+        	align-items: center;
+        	position: relative;
+        	position:fixed;
+        	z-index:10;
+        	left:0;
+        	top:0;
+            p{
+            	width:2rem;
+            	height:2rem;
+                img{
+                	width:100%;
+                }
+            }
+            h2{
+            	width:50%;
+            	line-height:2.4rem;
+            	text-align:center;
+            	font-size:.95rem;
+            	color:#333;
+            	white-space: nowrap;
+            	overflow: hidden;
+            	text-overflow: ellipsis;
+            }
+            ul{
+            	width:36%;
+            	background: rgba(0,0,0,0.7);
+                position: absolute;
+                top:2.2rem;
+                right:.5rem;
+                z-index:9;
+                border-radius: 4px;
+                li{
+                	width:100%;
+                    height:1.8rem;
+                    border-top:1px solid grey;
+                    a{
+                    	display: block;
+                    	width:100%;
+                    	height:100%;
+                    	display:flex;
+                    	justify-content: center;
+                    	align-items: center;
+                    }
+                    p{
+                    	width:.9rem;
+                    	height:.9rem;
+                    	margin-right: .5rem;
+                        img{
+                        	width:100%;
+                        }
+                    }
+                    span{
+                    	width:1.2rem;
+                    	color:#fff;
+                    	font-size:.6rem;
+                    }
+                }
+            }
+        }
+        /*图片展示区*/
+        .bigtu{
+        	width:100%;
+        	margin-top: 2.45rem;
+        	overflow: hidden;
+            .img_much{
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .img_uniq{
+                img{
+                    width:100%;
+                }
+            }
+        }
+        /*商品信息区域*/
+        .xinxi{
+        	width:100%;
+            overflow: hidden;
+            padding:.5rem 3%;
+            box-sizing: border-box;
+            font-size:.6rem;
+            h3{
+            	width:100%;
+            	line-height: 1.6rem;
+            	font-size: .9rem;
+            	color:#dd1712;
+            	text-align:center;
+            }
+            p{
+            	padding-bottom: .3rem;
+            	border-bottom:1px dashed #f3f3f3;
+            }
+            .sp1{
+            	display: block;
+            	font-weight:bold;
+            	font-size:.75rem;
+            	color:purple;
+            }
+            .sp2{
+            	display: block;
+            	font-size:.7rem;
+            	color:#444;
+            	text-indent: 1em;
+            }
+            .p1{
+               .sp2{
+                    color:darkcyan;
+                    font-size:.75rem;
+                    font-size:bold;
+                } 
+            }
+        }
+        /*购买商品*/
+        .buy{
+        	width:100%;
+            padding:0 3%;
+            box-sizing: border-box;
+            font-size:.6rem;
+            .jia{
+                font-size:.7rem;
+                color:blue;
+                line-height: 1.4rem;
+                margin-bottom: .25rem;
+                span{
+                	font-size:.8rem;
+                    color:#dd1712;
+                    font-weight:bold;
+                }
+            }
+            div{
+            	width:100%;
+            	height:1rem;
+            	display: flex;
+            	justify-content: space-between;
+            	margin-bottom: .25rem;
+                button{
+                	width:10%;
+                }
+                input{
+                	width: 80%;
+                	text-indent: .5rem;
+                }
+            }
+            .zjia{
+            	width:100%;
+                overflow: hidden;
+            	padding:.7rem 0;
+                span{
+                	font-size:.8rem;
+                	color:#dd1712;
+                }
+                button{
+                	width:40%;
+                	float:right;
+                }
+            }
+        }
     }
 </style>

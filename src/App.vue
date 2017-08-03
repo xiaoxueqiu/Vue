@@ -43,7 +43,7 @@ article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section
 display: block;
 }
 *{ margin:0; padding:0; outline:none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-body{ -webkit-tap-highlight-color:rgba(0,0,0,0);font-family:"微软雅黑",Tahoma,Arial,sans-serif;outline:none;background: #f2f2f2;color: #666}
+body{ -webkit-tap-highlight-color:rgba(0,0,0,0);font-family:"微软雅黑",Tahoma,Arial,sans-serif;outline:none;background: #fff;color: #666}
 h1,h2,h3,h4,h5,em,i,strong,th{ font-weight:normal; font-style: normal; }
 ul,ol,li,a{ list-style: none; text-decoration: none;font-family:-apple-system-font,simhei;color:#444;}
 table{ border-spacing: 0; border-collapse: collapse; }
