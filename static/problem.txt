@@ -1,4 +1,4 @@
-项目遇到的问题：
+﻿项目遇到的问题：
 1、切换路由(循环) 变字体颜色  想了好几种方法（比如绑定class，.router-link-active ）最后发现想复杂了给class添加hover就行了.....
 2、 vue轮播图插件vue-awesome-swiper的使用
 	第一步安装  npm install vue-awesome-swiper --save
@@ -71,10 +71,18 @@
 	vue文件的样式中加入<style lang="scss"></style>
 	运行 npm run dev
 4、axios 获取本地JSON数据
-	在实例上，data里声明一个list
+	在实例上，data里声明一个list空数组
 	data(){
 	     return {                
 	         list:[]
 	     }
 	},
-	在methods方法里声明this.list = list;
+	//在methods方法里声明this.list = list;
+	methods:{
+	     axios.get('../../static/json/shopfl.json').then(function (res) {
+                let list = res.data.lists;
+                this.list = list;
+                console.log(this.list)
+            })
+	}
+	

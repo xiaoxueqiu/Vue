@@ -5,8 +5,7 @@
             <form id="searchBox" method="get" class="searchBox" style="background: rgba(221, 23, 18, 0);">
                 <div class="search_box">
                     <div class="search">
-                        <input type="text" class="input" name="keywords" placeholder="搜索商品，品牌" id="searchVal" v-on:focus="focu" v-show="text">
-                        <input type="reset" class="sh_searchClear" title="重置搜索词" v-show="reset">
+                        <input type="text" class="input" name="keywords" placeholder="搜索商品，品牌" id="searchVal" v-on:focus="focu" v-show="text" v-model="bang">
                     </div>
                     <router-link to="/index/more">
                         <a class="me" v-show="opens"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/me_670cb9f.png" alt=""></a>
@@ -20,9 +19,21 @@
                 <dl>
                     <dt>热门搜索</dt>
                     <dd class="sear_hot">
-                        <a href="">欧文</a><a href="">篮球鞋</a><a href="">Air Jordan</a><a href="">boost</a><a href="">三叶草</a><a href="">阿迪达斯</a><a href="">T恤</a><a href="">vans</a><a href="">安德玛</a><a href="">耐克</a>
+                        <span v-for="(hot_ss,index) in hotArr" @click="dian(hot_ss,index)">{{hot_ss}}</span>
+                    </dd>
+                    <dt class="his" v-show="his">历史搜索</dt>
+                    <dd class="sear_record clearfix">
+                        <span id="history" class="his" v-show="his" v-for="(x,index) in hisArr">{{x}}</span>
+                    </dd>
+                    <dd>
+                        <p class="clear_history his">
+                            <a href="javascript:void(0);" id="clear_history" v-show="his" @click="qc()">清空历史记录</a>
+                        </p>
                     </dd>
                 </dl>
+            </div>
+            <div class="inner" id="searchRelate" style="display:none;">
+                <ul></ul>
             </div>
         </div>
         <!-- 轮播图 -->
@@ -30,7 +41,7 @@
         <!-- 六个分类 -->
         <div class="pic_banner clearfix">
            <ul class="zone">
-               <li v-for="(item,index) in list">
+               <li v-for="(item,index) in listArr">
                    <a :href="item.url">
                        <div class="tit">
                            <h2>{{item.tit}}</h2>
@@ -54,6 +65,10 @@
         <a href="//www.shihuo.cn/shaiwu/detail/53134.html" class="advert"><img src="http://shihuo.hupucdn.com/appHome/201707/3109/899186ca740680e6670da3961b74230d.jpg" alt=""></a>
         <!-- 切换数据区 -->
         <listview></listview>
+        <!-- 返回顶部 -->
+        <div class="scroll_top" v-show="scr_top" @click="scrollTop()">
+            <img src="//sh1.hoopchina.com.cn/images/trademobile/daigou/top.png">
+        </div>
     </div>
 </template>
 
@@ -72,13 +87,19 @@ export default {
     },
     data(){
         return{
+            id1:"",
+            scr_top:false,
             i:0,
+            bang:"",
+            his:false,
             opens:true,
             text:true,
             close:false,
             reset:false,
             page:false,
-            list:[] ,
+            listArr:[] ,
+            hisArr:[],
+            hotArr:["欧文","篮球鞋","Air Jordan","boost","三叶草","阿迪达斯","T恤","vans","安德玛","耐克"],
             arr3:[
                 {
                     tit:"今日优惠",
@@ -109,6 +130,7 @@ export default {
         this.getData()      
     },
     methods:{
+        //聚焦
         focu(){
             this.close=true,
             this.reset=true,
@@ -116,6 +138,22 @@ export default {
             this.opens=false,
             this.$refs.head.style.background='rgb(247,247,247)'
         },
+        //点击热门搜索的每一项
+        dian(hot_ss,index){
+            //console.log(index)
+            this.his = true;
+            this.bang = hot_ss;
+            //把绑定的内容添加到数组里
+            this.hisArr.push(hot_ss);
+            console.log(this.bang)
+            this.$router.push({path:'../shop_model',query:{id1:this.bang}});
+        },
+        //点击清除历史记录
+        qc(){
+           this.his = false; 
+           this.hisArr = [];
+        },
+        ///点击取消
         quxiao(){
             this.close=false,
             this.reset=false,
@@ -123,38 +161,59 @@ export default {
             this.opens=true,
             this.$refs.head.style.background= '-webkit-linear-gradient(top,rgba(0,0,0,.4),transparent)'
         },
+        //六个分类的数据
         getData(){
+            let _this = this;
             axios.get('../../static/json/shopfl.json')
             .then(function (res) {
-            let list = res.data.lists;
-            this.list = list;
+            let listArr = res.data.lists;
+            _this.listArr = listArr;
+            //console.log(_this.listArr)
           }).then(function(err){
             //console.log(err)
-          }.bind(this))
+          })
         },
         //搜索框背景逐渐变色
-        /*menu() {
+        menu() {
             let _this = this;
             _this.scroll = document.body.scrollTop+document.documentElement.scrollTop;
             let i = 0;
-            if(_this.scroll <=1200&&_this.scroll > 0){
-                _this.i++;
-                _this.$refs.head.style.background='rgba(221,23,18,0.'+_this.i+')';
-                if (_this.i>=99) {
-                    _this.$refs.head.style.background='rgb(221,23,18)';
-                }
-            }
-        }*/
+            if(_this.scroll <=600){
+                _this.i=_this.scroll/600;
+                _this.$refs.head.style.background='rgba(221,23,18,'+_this.i+')';
+                _this.scr_top = false;
+            }else{
+                _this.scr_top = true;
+                console.log(121)
+            };
+        },
+        //返回顶部
+        scrollTop(){
+            this.scr_top = false;
+            document.body.scrollTop=0
+            document.documentElement.scrollTop=0
+        }
     },
     //监听滚轮
-    /*mounted() {
+    mounted() {
         window.addEventListener('scroll', this.menu)
-    }*/
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+// 返回顶部
+.scroll_top {
+    position: fixed;
+    bottom: 3em;
+    right: 10px;
+    z-index: 10;
+    //border:3px solid #000;
+    img{
+        width:1.5rem;
+    }
+}
 .home{
     margin-bottom: 70px;
     width: 100%;
@@ -242,6 +301,16 @@ export default {
         left: 0;
         top: 2rem;
     }
+    #searchRelate {
+        background: #fff;
+        overflow: hidden;
+        position: absolute;
+        z-index: 82;
+        left: 0;
+        top: 1.26667rem;
+        width: 100%;
+        height: 100%;
+    }
     dl {
         background: #fff;
         padding: .5rem;
@@ -254,7 +323,7 @@ export default {
         }
         .sear_hot {
             margin-bottom: .13333rem;
-            a {
+            span {
                 font-size: .55rem;
                 display: inline-block;
                 margin-right: .22rem;
@@ -267,6 +336,24 @@ export default {
         }
         .his {
             margin-bottom: 0;
+        }
+    }
+    .sear_record{
+        border-bottom: 1px solid #e6e6e6;
+        border-top: 1px solid #e6e6e6;
+        padding-top:.3rem;
+        clear: both;
+        span{
+            border: 1px solid #aeaeae;
+            border-radius: 3px;
+            display:inline-block;
+            padding: .2rem;
+            text-align:center;
+            float: left;
+            margin-right:.3rem;
+            margin-bottom:.3rem;
+            font-size: .55rem;
+            color: #444;
         }
     }
     .clear_history {

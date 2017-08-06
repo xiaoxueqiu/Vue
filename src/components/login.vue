@@ -93,7 +93,9 @@ export default {
                     localStorage.setItem('username',document.querySelector('.user2').value);
                     setTimeout(function(){
                       this.$router.push({path:'/index/more'})
-                    }.bind(this),2000)
+                    }.bind(this),2000);
+                    this.username = "";
+                    this.password = ""
                 } else{
                     this.tishi = "账户信息有误"
                     this.showTishi = true

@@ -10,6 +10,7 @@ import More from '@/components/more'
 import Login from '@/components/login'
 import Detail from '../components/detail'
 import Shopcar from '../components/shopcar'
+import Shop_model from '../components/shop_model'
 
 Vue.use(Router)
 
@@ -66,6 +67,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/shop_model',
+      name: 'shop_model',
+      component: Shop_model
     },
     {
       path:"*",
