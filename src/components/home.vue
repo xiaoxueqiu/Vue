@@ -5,7 +5,7 @@
             <form id="searchBox" method="get" class="searchBox" style="background: rgba(221, 23, 18, 0);">
                 <div class="search_box">
                     <div class="search">
-                        <input type="text" class="input" name="keywords" placeholder="搜索商品，品牌" id="searchVal" v-on:focus="focu" v-show="text" v-model="bang">
+                        <input type="text" class="input" name="keywords" placeholder="搜索商品，品牌"  v-on:focus="focu" v-show="text" v-model="bang">
                     </div>
                     <router-link to="/index/more">
                         <a class="me" v-show="opens"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/me_670cb9f.png" alt=""></a>
@@ -177,6 +177,7 @@ export default {
         menu() {
             let _this = this;
             _this.scroll = document.body.scrollTop+document.documentElement.scrollTop;
+            //console.log( _this.scroll)
             let i = 0;
             if(_this.scroll <=600){
                 _this.i=_this.scroll/600;
@@ -196,7 +197,31 @@ export default {
     },
     //监听滚轮
     mounted() {
-        window.addEventListener('scroll', this.menu)
+        window.addEventListener('scroll', this.menu);
+        // 1 先绑定 scroll 事件
+        var map = {};
+        window.onhashchange = function() {
+            document.body.scrollTop = 0;
+        }
+        /*  2 再屏蔽掉浏览器自动恢复滚动位置行为带来的影响
+            a 在 hashchange 时强制 document.body.scrollTop = 0
+            b 在 scroll 事件里面, 当 document.body.scrollTop = 0 的时候不做 存操作.*/
+        window.onscroll = function() {
+            if (document.body.scrollTop) {
+                // 存
+                map[location.hash] = document.body.scrollTop;
+            } else {
+                var timer = null;
+                //3 在读操作里面, 设置一个定时任务, 去判断 document.body.scrollTop 的值和你保存的位置是不是相同的
+                timer = setInterval(function(){
+                    if (document.body.scrollTop == map[location.hash]) {
+                        clearInterval(timer);
+                    } else {
+                        document.body.scrollTop = map[location.hash];
+                    }
+                }, 20);
+            }
+        }
     }
 }
 </script>
@@ -219,148 +244,135 @@ export default {
     width: 100%;
     height:100%;
     background-color: #f3f3f3;
+    //搜索框
     .topnav{
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    border: 0;
-    background: -webkit-linear-gradient(top,rgba(0,0,0,.4),transparent);
-    form {
         width: 100%;
-        background: rgba(221, 23, 18, 0);
-        .search_box {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        border: 0;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.4),transparent);
+        form {
             width: 100%;
-            overflow: hidden;
-            height: 100%;
-            .search {
-                width: 85%;
-                float: left;
-                padding-left: .3rem;
-                position: relative;
-                .input {
-                    width: 100%;
-                    border-radius: .2rem;
-                    height: 1.4rem;
-                    margin: .2rem 0;
-                    border: 0;
-                    padding-left: .9rem;
-                    color: #666;
-                    font-size: .5rem;
-                    background: #eaeaea url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/search_c57b24b.png) .2rem center no-repeat;
-                    background-size: .6rem;
-                    overflow: hidden;
+            background: rgba(221, 23, 18, 0);
+            .search_box {
+                width: 100%;
+                overflow: hidden;
+                height: 100%;
+                .search {
+                    width: 85%;
+                    float: left;
+                    padding-left: .3rem;
+                    position: relative;
+                    .input {
+                        width: 100%;
+                        border-radius: .2rem;
+                        height: 1.4rem;
+                        margin: .2rem 0;
+                        padding-left: .9rem;
+                        color: #666;
+                        font-size: .5rem;
+                        background: #eaeaea url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/search_c57b24b.png) .2rem center no-repeat;
+                        background-size: .6rem;
+                        overflow: hidden;
+                    }
                 }
-                input[type=reset] {
-                    background: url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/reset_5e495f9.png) no-repeat;
-                    background-size: .4rem;
-                    position: absolute;
-                    right: .3rem;
-                    top: 35%;
-                    height: .4rem;
-                    width: .4rem;
-                    border: 0;
-                    color: transparent;
-                    display: none;
-                    z-index: 1;
+                .me {
+                    display: block;
+                    float: right;
+                    width: 15%;
+                    padding: 0 .2rem;
+                    padding-top: .2rem;
+                    text-align: center;
+                    img{
+                        width:1.3rem;
+                    }
                 }
-            }
-            .me {
-                display: block;
-                float: right;
-                width: 15%;
-                padding: 0 .2rem;
-                padding-top: .2rem;
-                text-align: center;
-                img{
-                    width:1.3rem;
+                .cancel{
+                    font-size:.6rem;
+                    margin-left:15px;
                 }
-            }
-            .cancel{
-                font-size:.6rem;
-                margin-left:15px;
             }
         }
     }
-}
-.search_page {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 2.4rem;
-    overflow-y: scroll;
-    z-index: 2;
-    #searchWrapper {
-        width: 100%;
+    .search_page {
         background: #fff;
-        position: absolute;
-        z-index: 81;
-        left: 0;
-        top: 2rem;
-    }
-    #searchRelate {
-        background: #fff;
-        overflow: hidden;
-        position: absolute;
-        z-index: 82;
-        left: 0;
-        top: 1.26667rem;
+        position: fixed;
+        top: 0;
         width: 100%;
         height: 100%;
-    }
-    dl {
-        background: #fff;
-        padding: .5rem;
-        padding-right: 0;
-        padding-bottom: 0;
-        dt {
-            font-size: .6rem;
-            color: #999;
-            margin-bottom: .5rem;
+        padding-top: 2.4rem;
+        overflow-y: scroll;
+        z-index: 2;
+        #searchWrapper {
+            width: 100%;
+            background: #fff;
+            position: absolute;
+            z-index: 81;
+            left: 0;
+            top: 2rem;
         }
-        .sear_hot {
-            margin-bottom: .13333rem;
-            span {
-                font-size: .55rem;
-                display: inline-block;
-                margin-right: .22rem;
-                margin-bottom: .2rem;
-                border: 1px solid #aeaeae;
-                color: #444;
-                padding: .2rem;
-                border-radius: 3px;
+        #searchRelate {
+            background: #fff;
+            overflow: hidden;
+            position: absolute;
+            z-index: 82;
+            left: 0;
+            top: 1.26667rem;
+            width: 100%;
+            height: 100%;
+        }
+        dl {
+            background: #fff;
+            padding: .5rem;
+            padding-right: 0;
+            padding-bottom: 0;
+            dt {
+                font-size: .6rem;
+                color: #999;
+                margin-bottom: .5rem;
+            }
+            .sear_hot {
+                margin-bottom: .13333rem;
+                span {
+                    font-size: .55rem;
+                    display: inline-block;
+                    margin-right: .22rem;
+                    margin-bottom: .2rem;
+                    border: 1px solid #aeaeae;
+                    color: #444;
+                    padding: .2rem;
+                    border-radius: 3px;
+                }
+            }
+            .his {
+                margin-bottom: 0;
             }
         }
-        .his {
-            margin-bottom: 0;
+        .sear_record{
+            border-bottom: 1px solid #e6e6e6;
+            border-top: 1px solid #e6e6e6;
+            padding-top:.3rem;
+            clear: both;
+            span{
+                border: 1px solid #aeaeae;
+                border-radius: 3px;
+                display:inline-block;
+                padding: .2rem;
+                text-align:center;
+                float: left;
+                margin-right:.3rem;
+                margin-bottom:.3rem;
+                font-size: .55rem;
+                color: #444;
+            }
+        }
+        .clear_history {
+            margin: .4rem auto;
+            text-align: center;
         }
     }
-    .sear_record{
-        border-bottom: 1px solid #e6e6e6;
-        border-top: 1px solid #e6e6e6;
-        padding-top:.3rem;
-        clear: both;
-        span{
-            border: 1px solid #aeaeae;
-            border-radius: 3px;
-            display:inline-block;
-            padding: .2rem;
-            text-align:center;
-            float: left;
-            margin-right:.3rem;
-            margin-bottom:.3rem;
-            font-size: .55rem;
-            color: #444;
-        }
-    }
-    .clear_history {
-        margin: .4rem auto;
-        text-align: center;
-    }
-}
     .pic_banner {
         background: #fff;
         margin-top: .26667rem;

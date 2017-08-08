@@ -9,7 +9,7 @@
     if ($mysqli->connect_error) {
         die('链接错误信息:'.$mysqli->connect_error);
     }
-    // 清除乱码
+    // 清除乱码让,中文可以正常显示。
     $mysqli->query('set names utf8');
 
     // 查询

@@ -2,7 +2,7 @@
     <div class="detail">
         <header>
         	<p class="head_p1"><router-link to="/home"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_50e46d0.png"></router-link></p>
-            <h2>{{content.title}}</h2>
+            <h2>商品详情</h2>
         	<p @click="bol()"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_9992b6c.png"></p>
         	<ul v-show="bool">
         		<li>
@@ -32,7 +32,6 @@
 
         <!-- 商品信息区域 -->
         <div class="xinxi">
-            <h3>相关商品信息</h3>
         	<p class="p1">
         	    <span class="sp1">商品名(标题)：</span>
         	    <span class="sp2">{{content.title}}</span>
@@ -219,13 +218,6 @@ export default {
             padding:.5rem 3%;
             box-sizing: border-box;
             font-size:.6rem;
-            h3{
-            	width:100%;
-            	line-height: 1.6rem;
-            	font-size: .9rem;
-            	color:#dd1712;
-            	text-align:center;
-            }
             p{
             	padding-bottom: .3rem;
             	border-bottom:1px dashed #f3f3f3;
@@ -233,12 +225,12 @@ export default {
             .sp1{
             	display: block;
             	font-weight:bold;
-            	font-size:.75rem;
+            	font-size:.6rem;
             	color:purple;
             }
             .sp2{
             	display: block;
-            	font-size:.7rem;
+            	font-size:.75rem;
             	color:#444;
             	text-indent: 1em;
             }

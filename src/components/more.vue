@@ -2,9 +2,12 @@
     <div class="more" ref="morediv">
         <!-- 头部区域 -->
         <div class="black">
-            <div class="toux"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/head_02977e3.png"></div>
+            <div class="toux"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/head_02977e3.png">
+            <p v-bind:msg="msg">{{msg}}</p>
+            </div>
             <div class="dz">
-            <router-link to="/login"> 登录</router-link>
+                <router-link to="/login"><span v-show="log">登录</span></router-link>
+                <span v-show="out" @click="outBtn()">退出</span>
                 <p>金币 0</p>
             </div>
         </div>
@@ -93,18 +96,35 @@
 
 export default {
     name: 'more',
-    // data () {
-        
-    // },
+    data () {
+        return{
+            msg:'未登录',
+            log:true,
+            out:false,
+        }
+    },
     methods:{
         jump() {
             this.$router.push('../shopcar');
+        },
+        outBtn(){
+            localStorage.clear();
+            this.log = true;
+            this.out = false;
         }
     },
     mounted () {
 　　    let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         // ref在官网上的解释简单来说就是用来绑定某个dom元素，或者来说用来绑定某个组件，然后在$refs里面调用
         this.$refs.morediv.style.height = h +'px';
+        this.msg = JSON.parse(localStorage.getItem('username'));
+        if (this.msg) {
+            this.log = false;
+            this.out = true;   
+        }else{
+            this.log = true;
+            this.out = false;
+        }
     }
 }
 </script>
@@ -126,8 +146,10 @@ export default {
             width:2.1rem;
             height:2.1rem;
             float:left;
-            margin-top: 3rem;
+            margin-top: 2.5rem;
             margin-left: 1rem;
+            font-size:.7rem;
+            color:#fff;
             img{
                 width: 100%;
                 height:100%;
@@ -137,13 +159,12 @@ export default {
             width:75%;
             overflow: hidden;
             float:left;
-            margin-top: 3.2rem;
+            margin-top: 2.7rem;
             box-sizing: border-box;
             padding-left: 1.1rem;
-            a{
+            span{
                 font-size:.75rem;
-                color:#fff;
-                margin-right:.5rem;
+                color:#fff; 
             }
             p{
                 margin-top: .3rem;

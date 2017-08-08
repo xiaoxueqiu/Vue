@@ -5,7 +5,7 @@
         	<form ref="ss">
         		<input type="image" name="" src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/search_0b8e800.png">
                 <transition name="fade">
-        		     <input type="text" name="" placeholder="搜索最好的运动装备" v-on:focus="focu" v-show="text" v-model="bang">
+        		     <input type="text" name="" placeholder="搜索最好的运动装备" v-on:focus="focu" v-show="text" v-model="bang" v-if>
                 </transition>
         	</form>
         	<p @click="bol()" v-show="opens"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_9992b6c.png"></p>
@@ -114,6 +114,27 @@ export default {
 </script>
 
 <style lang="scss">
+ /* 定义动画 */
+.fade-enter-active,.fade-leave-active {
+    transition: all 3s ease;
+}
+/* 定义宽高动画 */
+.fade-enter-active{
+    opacity:1;
+    width:300px;
+    height:300px;
+}
+.fade-leave-active{
+    opacity:0;
+    width:100px;
+    height:100px;
+}
+/* 重要：定义初始状态 */
+.fade-enter{
+    opacity:0;
+    width:100px;
+    height:100px;
+}
     .topnav2{
     	width:100%;
         /*头部区域*/
@@ -159,27 +180,6 @@ export default {
                     &::-webkit-input-placeholder{
                     	color:#666;
                     }
-                }
-                /* 定义动画 */
-                .fade-enter-active,.fade-leave-active {
-                    transition: all 1s ease;
-                }
-                /* 定义宽高动画 */
-                .fade-enter-active{
-                    opacity:1;
-                    width:300px;
-                    height:300px;
-                }
-                .fade-leave-active{
-                    opacity:0;
-                    width:100px;
-                    height:100px;
-                }
-                /* 重要：定义初始状态 */
-                .fade-enter{
-                    opacity:0;
-                    width:100px;
-                    height:100px;
                 }
             }
             .cancel{

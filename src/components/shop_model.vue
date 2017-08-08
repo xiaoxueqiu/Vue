@@ -1,7 +1,7 @@
 <template>
     <div class="shop_model">
         <header>
-        	<p class="head_p1"><router-link to="/home"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_50e46d0.png"></router-link></p>
+        	<p class="head_p1" @click="backout()"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_50e46d0.png"></p>
         	<form>
         		<input type="image" name="" src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/search_0b8e800.png">
         		<input type="text" name="" placeholder="搜索最好的运动装备" v-model="name">
@@ -22,7 +22,7 @@
         		</li>
         	</ul>
         </header> 
-        <h1>34354544</h1>    
+        <h1 v-model="name">{{name}}</h1>    
     </div>
 </template>
 
@@ -39,6 +39,10 @@ export default {
     	// 头部点击事件
     	bol(){
     		this.bool1 = this.bool1?false:true;
+    	},
+    	backout(){
+    		//console.log(12)
+    		this.$router.back()
     	}
     } ,
     mounted(){

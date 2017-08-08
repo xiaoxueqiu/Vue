@@ -42,23 +42,6 @@
             </form>
         </div>
     </div>
-   
-    
-    <!-- <div class="login-wrap" v-show="showLogin">
-        <p v-show="showTishi">{{tishi}}</p>
-        <input type="text" placeholder="请输入用户名" v-model="username" class="user2">
-        <input type="password" placeholder="请输入密码" v-model="password" class="pass2">
-        <button v-on:click="login" class="login_cla1">登录</button><button>注册</button>
-        <span v-on:click="ToRegister">没有账号？马上注册</span>
-    </div> -->
-<!-- 注册 -->
-    <!-- <div class="register-wrap" v-show="showRegister">
-        <p v-show="showTishi">{{tishi}}</p>
-        <input type="text" placeholder="请输入用户名" v-model="newUsername" class="user1">
-        <input type="password" placeholder="请输入密码" v-model="newPassword" class="pass1">
-        <button class="login_cla2">登录</button><button v-on:click="register">注册</button>
-        <span v-on:click="ToLogin">已有账号？马上登录</span>
-    </div> -->
 </div>
 </template>
 
@@ -75,7 +58,8 @@ export default {
             username: '',
             password: '',
             newUsername: '',
-            newPassword: ''
+            newPassword: '',
+            id2:''
         }
     },
     methods: {
@@ -90,12 +74,11 @@ export default {
                 if (res == "ok") {
                     this.tishi = "登录成功"
                     this.showTishi = true
-                    localStorage.setItem('username',document.querySelector('.user2').value);
+                    localStorage.setItem('username',JSON.stringify(document.querySelector('.user2').value));
+                    console.log(localStorage)
                     setTimeout(function(){
-                      this.$router.push({path:'/index/more'})
+                      this.$router.push({path:'/index/more',query:{id2:username}})
                     }.bind(this),2000);
-                    this.username = "";
-                    this.password = ""
                 } else{
                     this.tishi = "账户信息有误"
                     this.showTishi = true
@@ -271,13 +254,5 @@ export default {
     .pwd-ipt{
         margin-bottom: 25px;
     }
-   
-    /* .login-wrap{text-align:center;}
-    .register-wrap{text-align:center;}
-    input{display:block; width:250px; height:40px; line-height:40px; margin:0 auto; margin-bottom: 10px; outline:none; border:1px solid #888; padding:10px; box-sizing:border-box;}
-    p{color:red;}
-    button{display:block; width:250px; height:40px; line-height: 40px; margin:0 auto; border:none; background-color:#41b883; color:#fff; font-size:16px; margin-bottom:5px;}
-    span{cursor:pointer;}
-    span:hover{color:#41b883;} */
 
 </style>

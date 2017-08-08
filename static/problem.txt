@@ -1,6 +1,5 @@
 ﻿项目遇到的问题：
-1、切换路由(循环) 变字体颜色  想了好几种方法（比如绑定class，.router-link-active ）最后发现想复杂了给class添加hover就行了.....
-2、 vue轮播图插件vue-awesome-swiper的使用
+1、 vue轮播图插件vue-awesome-swiper的使用
 	第一步安装  npm install vue-awesome-swiper --save
 	第二步在main.js中引入
 		import Vue from 'vue'
@@ -56,7 +55,7 @@
 	        }  
 	    }  
 	</script>  
-3、在vue中使用scss
+2、在vue中使用scss
 	安装依赖
 	//sass-loader依赖于node-sass
 	 	cnpm install node-sass
@@ -70,7 +69,7 @@
 		}
 	vue文件的样式中加入<style lang="scss"></style>
 	运行 npm run dev
-4、axios 获取本地JSON数据
+3、axios 获取本地JSON数据
 	在实例上，data里声明一个list空数组
 	data(){
 	     return {                
